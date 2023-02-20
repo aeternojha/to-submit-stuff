@@ -1,0 +1,261 @@
+:root {
+    --kelly-green: rgb(18, 108, 47);
+    --lower-btn-gradient: rgb(53, 53, 53);
+    --upper-btn-gradient: rgb(89, 89, 89);
+    --lower-btn-gradient-a: rgb(85, 152, 5);
+    --upper-btn-gradient-a: rgb(115, 166, 23);
+    --form-fields-color: rgb(215, 215, 215);
+    --form-bg-color: rgb(241, 241, 241);
+}
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.fa {
+    color: var(--kelly-green);
+}
+
+.faw {
+    color: white;
+}
+
+.kelly-green {
+    color: var(--kelly-green);
+}
+
+body {
+    background-image: url("/img/bg.png");
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    padding-top: 50px;
+    width: 960px;
+    height: auto;
+    height: 800px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.logo-wrapper {
+    display: grid;
+    place-content: center;
+    height: 100px;
+}
+
+.non-logo-sect-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.head-contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-contacts {
+    display: flex;
+    cursor: pointer;
+}
+
+.head-contacts i {
+    padding: 0px 10px;
+}
+
+.head-contacts i,
+p {
+    font-size: 14px;
+}
+
+.separator::after {
+    content: "    |";
+    color: var(--kelly-green);
+}
+
+.nav-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background: linear-gradient(to top, var(--lower-btn-gradient), var(--upper-btn-gradient));
+    color: white;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+    /*top-left corner,top-right corner,bottom-right corner,bottom-left corner*/
+}
+
+.btn:hover {
+    background: linear-gradient(to top, var(--lower-btn-gradient-a), var(--upper-btn-gradient-a), white);
+}
+
+.active {
+    background: linear-gradient(to top, var(--lower-btn-gradient-a), var(--upper-btn-gradient-a), white);
+}
+
+.content-wrapper {
+    height: 286px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.non-form-wrapper {
+    width: 70%;
+}
+
+.content-images img {
+    width: 32.5%;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.content-text p,
+a {
+    color: gray;
+    padding-top: 10px;
+}
+
+.content-text h3 {
+    color: gray;
+    font-size: 14px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.content-text p {
+    font-size: 13px;
+}
+
+.content-text a {
+    margin-left: 500px;
+    width: 155px;
+    font-size: 14px;
+    color: var(--kelly-green);
+}
+
+.form-wrapper {
+    background-color: var(--form-bg-color);
+    width: 26%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-left: 40px;
+    color: var(--kelly-green);
+}
+
+.form-title i {
+    padding-right: 10px;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    justify-content: space-evenly;
+}
+
+form input,
+textarea {
+    border: none;
+    background-color: var(--form-fields-color);
+}
+
+form input {
+    height: 25px;
+    width: 95%;
+}
+
+form textarea {
+    width: 95%;
+}
+
+.submit-btn {
+    background: linear-gradient(to top, var(--lower-btn-gradient-a), var(--upper-btn-gradient-a), white);
+    color: white;
+    padding: 5px 5px 5px 10px;
+    width: 80px;
+    margin-left: 135px;
+    border: 1px solid gray;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.footer-sect-1 {
+    width: 50%;
+}
+
+.footer-ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-ul li,
+i {
+    padding-right: 10px;
+}
+
+.footer-ul a:nth-child(1) {
+    color: var(--kelly-green);
+}
+
+.footer-nav {
+    padding-bottom: 5px;
+}
+
+.footer-nav a {
+    font-weight: bold;
+    color: black;
+}
+
+.footer-nav i {
+    color: black;
+}
+
+.footer-sect-2 p {
+    font-size: 11px;
+}
+
+.footer-sect-1 p {
+    font-size: 11px;
+}
